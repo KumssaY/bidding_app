@@ -1,0 +1,26 @@
+.catalogue-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.catalogue-container h1 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.catalogue-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.catalogue-grid > * {
+  /* Ensures consistent card size */
+  display: flex;
+  justify-content: center;
+}
